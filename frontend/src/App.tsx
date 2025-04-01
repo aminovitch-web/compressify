@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import LoginPage from '@/features/authentification/pages/Login'
 import SignupPage from '@/features/authentification/pages/Signup'
 import HomePage from '@/features/public/pages/Home'
@@ -8,7 +8,6 @@ import Layout from '@/layouts/Layout'
 
 export default function App() {
   return (
-    <Router>
       <div>
         <h1>compressify</h1>
         <Routes>
@@ -21,6 +20,5 @@ export default function App() {
           </Route>
         </Routes>
       </div>
-    </Router>
   )
 }
